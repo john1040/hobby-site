@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "~/components/ui/card";
 import { Separator } from "~/components/ui/separator";
+import { LoginModal } from "~/components/auth/login-modal"
 
 export default function Index() {
   return (
@@ -34,12 +35,8 @@ export default function Index() {
               </nav>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" asChild>
-                <Link to="/login">Sign In</Link>
-              </Button>
-              <Button asChild>
-                <Link to="/register">Sign Up</Link>
-              </Button>
+              <LoginModal mode="signin" />
+              <LoginModal mode="signup" />
             </div>
           </div>
         </div>

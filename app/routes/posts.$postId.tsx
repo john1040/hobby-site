@@ -15,7 +15,31 @@ const post = {
     In this comprehensive guide, we'll explore everything you need to know about DSLR photography, 
     from basic concepts to advanced techniques.
 
-    First, let's talk about the essential equipment every photographer should have...
+    <img src="/example-post-images/1.jpeg" alt="DSLR Camera Basics" className="w-full rounded-lg my-6" />
+
+    First, let's talk about the essential equipment every photographer should have. A good DSLR camera
+    is the foundation of your photography journey. When choosing your first DSLR, consider factors like
+    sensor size, megapixel count, and your budget.
+
+    <img src="/example-post-images/2.jpeg" alt="Camera Equipment" className="w-full rounded-lg my-6" />
+
+    Understanding exposure is crucial in photography. The exposure triangle consists of three elements:
+    - Aperture: Controls depth of field
+    - Shutter Speed: Determines motion blur
+    - ISO: Affects image brightness and noise
+
+    <img src="/example-post-images/3.jpeg" alt="Exposure Triangle" className="w-full rounded-lg my-6" />
+
+    Composition is what sets great photos apart from good ones. The rule of thirds is a fundamental
+    principle that can dramatically improve your photography. Imagine your frame divided into a 3x3 grid,
+    and place important elements along these lines or at their intersections.
+
+    <img src="/example-post-images/4.jpeg" alt="Rule of Thirds" className="w-full rounded-lg my-6" />
+
+    Remember, practice makes perfect. Don't be afraid to experiment with different settings and
+    techniques. The more you shoot, the better you'll understand your camera and develop your unique style.
+
+    <img src="/example-post-images/5.jpeg" alt="Photography Results" className="w-full rounded-lg my-6" />
   `,
   author: {
     name: "Sarah Parker",
@@ -121,7 +145,10 @@ export default function PostDetail() {
             <Card>
               <CardContent className="pt-6">
                 <div className="prose max-w-none">
-                  <p className="whitespace-pre-line">{post.content}</p>
+                  <div 
+                    className="whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ __html: post.content }}
+                  />
                 </div>
                 <div className="mt-6 flex items-center justify-between">
                   <div className="flex items-center space-x-4">
