@@ -5,6 +5,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 import { Separator } from "~/components/ui/separator";
 import { Badge } from "~/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
+import { Header } from "~/components/layout/Header";
+import { Footer } from "~/components/layout/Footer";
 
 // Mock data - this would come from your backend later
 const post = {
@@ -95,7 +97,8 @@ const post = {
 
 export default function PostDetail() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
       <main className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
@@ -232,6 +235,7 @@ export default function PostDetail() {
           </TabsContent>
         </Tabs>
       </main>
+      <Footer />
     </div>
   );
 } 

@@ -1,0 +1,12 @@
+{
+  "productName": "RG Gundam 2.0",
+  "productGrade": "RG",
+  "price": "¥3000",
+  "images": [
+    "/example-post-images/1.jpeg",
+    "/example-post-images/2.jpeg",
+    "/example-post-images/3.jpeg",
+    "/example-post-images/4.jpeg",
+    "/example-post-images/5.jpeg"
+  ]
+} 
